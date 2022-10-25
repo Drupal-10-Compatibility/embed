@@ -113,6 +113,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "drupal/embed": {
+                "Fix tests to declare properties as protected": "patches/fix-tests-to-declare-properties-as-protected.patch"
+            }
         }
     },
     "scripts": {

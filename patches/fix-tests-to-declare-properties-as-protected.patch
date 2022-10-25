@@ -1,0 +1,52 @@
+diff --git a/tests/src/Functional/EmbedPreviewTest.php b/tests/src/Functional/EmbedPreviewTest.php
+index eadf161..88185d4 100644
+--- a/tests/src/Functional/EmbedPreviewTest.php
++++ b/tests/src/Functional/EmbedPreviewTest.php
+@@ -18,7 +18,7 @@ class EmbedPreviewTest extends BrowserTestBase {
+   /**
+    * {@inheritdoc}
+    */
+-  public static $modules = ['embed_test', 'filter'];
++  protected static $modules = ['embed_test', 'filter'];
+ 
+   /**
+    * {@inheritdoc}
+diff --git a/tests/src/Functional/EmbedTestBase.php b/tests/src/Functional/EmbedTestBase.php
+index 312a828..bc86f60 100644
+--- a/tests/src/Functional/EmbedTestBase.php
++++ b/tests/src/Functional/EmbedTestBase.php
+@@ -20,7 +20,7 @@ abstract class EmbedTestBase extends BrowserTestBase {
+    *
+    * @var array
+    */
+-  public static $modules = [
++  protected static $modules = [
+     'block',
+     'embed',
+     'embed_test',
+diff --git a/tests/src/FunctionalJavascript/EmbedButtonAdminTest.php b/tests/src/FunctionalJavascript/EmbedButtonAdminTest.php
+index b52f6d4..c4c9490 100644
+--- a/tests/src/FunctionalJavascript/EmbedButtonAdminTest.php
++++ b/tests/src/FunctionalJavascript/EmbedButtonAdminTest.php
+@@ -23,7 +23,7 @@ class EmbedButtonAdminTest extends WebDriverTestBase {
+    *
+    * @var array
+    */
+-  public static $modules = [
++  protected static $modules = [
+     'block',
+     'embed',
+     'embed_test',
+diff --git a/tests/src/Kernel/IconTest.php b/tests/src/Kernel/IconTest.php
+index 1c1a05b..7e55a96 100644
+--- a/tests/src/Kernel/IconTest.php
++++ b/tests/src/Kernel/IconTest.php
+@@ -17,7 +17,7 @@ class IconTest extends KernelTestBase {
+   /**
+    * {@inheritdoc}
+    */
+-  public static $modules = [
++  protected static $modules = [
+     'system',
+     'embed',
+     'embed_test',
